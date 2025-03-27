@@ -1,0 +1,66 @@
+PATH
+  remote: .
+  specs:
+    qr_code_gem (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chunky_png (1.4.0)
+    date (3.4.1)
+    diff-lcs (1.6.0)
+    io-console (0.8.0)
+    irb (1.15.1)
+      pp (>= 0.6.0)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
+    minitest (5.25.5)
+    observer (0.1.2)
+    pkg-config (1.6.0)
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
+    psych (5.2.3)
+      date
+      stringio
+    rake (13.2.1)
+    rdoc (6.13.0)
+      psych (>= 4.0.0)
+    reline (0.6.0)
+      io-console (~> 0.5)
+    rmagick (6.1.1)
+      observer (~> 0.1)
+      pkg-config (~> 1.4)
+    rqrcode (2.2.0)
+      chunky_png (~> 1.0)
+      rqrcode_core (~> 1.0)
+    rqrcode_core (1.2.0)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.3)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.3)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.2)
+    stringio (3.1.5)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  irb
+  minitest (~> 5.16)
+  qr_code_gem!
+  rake (~> 13.0)
+  rmagick
+  rqrcode
+  rspec
+
+BUNDLED WITH
+   2.6.6
