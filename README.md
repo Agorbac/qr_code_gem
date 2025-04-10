@@ -32,6 +32,20 @@
   - `chunky_png` — работа с PNG-форматом
   - `qrio` — распознавание QR-кодов
 
+## 📦 Установка
+
+Для установки гем можно использовать Bundler или `gem`:
+
+1. Через Bundler:
+
+```bash
+bundle add qr_code_gem01
+```
+2. Если Bundler не используется, установите гем с помощью:
+
+```bash
+gem install qr_code_gem01
+```
 
 ```bash
 bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
