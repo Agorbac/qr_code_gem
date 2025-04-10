@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gemspec
+gem 'rubocop'
 
 gem "rake", "~> 13.0"
 gem "minitest", "~> 5.16"
