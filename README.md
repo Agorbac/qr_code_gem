@@ -84,7 +84,7 @@ end
 
 ## ⚡️ Запуск проекта
 
-1. Для запуска проекта переходим в директорию (`\lib`):
+1. Для запуска проекта переходим в директорию `\lib`:
 
 ```bash
 cd lib
@@ -107,10 +107,7 @@ irb
 4. Наслаждаемся работой прекрасного Gem`a
 
 
-## License
+## 📝 Лицензия
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-=======
-# qr_code_gem
-The best qr_code_gem
->>>>>>> df58dd8c3be33ad709a811a86d626470603a685e
+Проект лицензирован на условиях [MIT License](https://opensource.org/licenses/MIT).
+=====
