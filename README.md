@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # QrCodeGem
 
 TODO: Delete this and the text below, and describe your gem
@@ -37,3 +38,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+=======
+# qr_code_gem
+The best qr_code_gem
+>>>>>>> df58dd8c3be33ad709a811a86d626470603a685e
