@@ -9,7 +9,7 @@ require "open3"
 
 module QrCodeGem
   class Error < StandardError; end
-  def self.encode(text, filename = "qr_code.jpg")
+  def self.encode(text, filename = "qr_code.png")
     begin
       qrcode = RQRCode::QRCode.new(text)
 
@@ -22,7 +22,7 @@ module QrCodeGem
       ))
 
       image = MiniMagick::Image.open(svg_file)
-      image.format("jpg")
+      image.format("png")
       image.write(filename)
       image.destroy!
       
