@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # QrCodeGem⚙️
 
 **QrCodeGem** — это Ruby-гем для генерации и распознавания QR-кодов. Он использует библиотеки RQRCode, MiniMagick и Qrio для создания изображений QR-кодов и их распознавания из файлов.
@@ -12,10 +12,15 @@
 - Владимир Карабанов
 - Дмитрий Проскуряков
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+## 🎯 Цель проекта
 
-Install the gem and add to the application's Gemfile by executing:
+Создание библиотеки для работы с QR-кодами в Ruby:
 
+- Генерация QR-кодов из произвольного текста и сохранение в изображения (`.jpg`).
+- Распознавание QR-кодов с изображений и извлечение текста.
+- Обработка временных файлов с автоматическим удалением после завершения работы.
+
+Проект подходит для локального использования, а также для встраивания в более крупные Ruby/Rails приложения.
 ```bash
 bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 ```
