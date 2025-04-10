@@ -87,27 +87,27 @@ end
 1. Для запуска проекта переходим в директорию `\lib`:
 
 ```bash
-cd lib
+gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 ```
 
-2. Запустите код для генерации QR-кода:
+## Usage
 
-```bash
-irb
-> require_relative "qr_code_gem"
-> QrCodeGem.encode("Текст")
-```
+TODO: Write usage instructions here
 
-3. Запустите код для распознавания QR-кода:
+## Development
 
-```bash
-> QrCodeGem.decode("Название файла")
-```
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-4. Наслаждаемся работой прекрасного Gem`a 🙂
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## Contributing
 
-## 📝 Лицензия
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/qr_code_gem.
 
-Проект лицензирован на условиях [MIT License](https://opensource.org/licenses/MIT).
-=====
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+=======
+# qr_code_gem
+The best qr_code_gem
+>>>>>>> df58dd8c3be33ad709a811a86d626470603a685e
