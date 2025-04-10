@@ -16,7 +16,7 @@
 
 Создание библиотеки для работы с QR-кодами в Ruby:
 
-- Генерация QR-кодов из произвольного текста и сохранение в изображения (`.jpg`).
+- Генерация QR-кодов из произвольного текста и сохранение в изображения (`.png`).
 - Распознавание QR-кодов с изображений и извлечение текста.
 - Обработка временных файлов с автоматическим удалением после завершения работы.
 
@@ -32,7 +32,7 @@
   - `chunky_png` — работа с PNG-форматом
   - `qrio` — распознавание QR-кодов
 
-## 📦 Установка
+## 💻 Установка
 
 Для установки гем можно использовать Bundler или `gem`:
 
@@ -57,20 +57,38 @@ If bundler is not being used to manage dependencies, install the gem by executin
 gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 ```
 
-## Usage
+## 🚀 Использование
 
-TODO: Write usage instructions here
+**Генерация QR-кода**
+Для генерации QR-кода из текста и сохранения его в PNG-формате:
 
-## Development
+```ruby
+# Подключаем библиотеку
+require 'qr_code_gem'
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+# Генерируем QR-код
+filename = QrCodeGem.encode("Текст для QR-кода", "qr_code.png")
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org). Андрей
+puts "QR-код сохранен в: #{filename}"
+```
+Этот код создаст файл qr_code.png, содержащий QR-код с переданным текстом.
 
-## Contributing
+**Распознавание QR-кода**
+Для декодирования текста из изображения, содержащего QR-код:
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/qr_code_gem.
+```ruby
+# Подключаем библиотеку
+require 'qr_code_gem'
 
+# Декодируем QR-код с изображения
+decoded_text = QrCodeGem.decode("qr_code.png")
+
+if decoded_text
+  puts "Текст, закодированный в QR-коде: #{decoded_text}"
+else
+  puts "QR-код не найден или не удалось его распознать."
+end
+```
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
