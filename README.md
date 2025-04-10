@@ -1,4 +1,3 @@
-
 # QrCodeGem⚙️
 
 **QrCodeGem** — это Ruby-гем для генерации и распознавания QR-кодов. Он использует библиотеки RQRCode, MiniMagick и Qrio для создания изображений QR-кодов и их распознавания из файлов.
@@ -87,27 +86,27 @@ end
 1. Для запуска проекта переходим в директорию `\lib`:
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+cd lib
 ```
 
-## Usage
+2. Запустите код для генерации QR-кода:
 
-TODO: Write usage instructions here
+```bash
+irb
+> require_relative "qr_code_gem"
+> QrCodeGem.encode("Текст")
+```
 
-## Development
+3. Запустите код для распознавания QR-кода:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+```bash
+> QrCodeGem.decode("Название файла")
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+4. Наслаждаемся работой прекрасного Gem`a 🙂
 
-## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/qr_code_gem.
+## 📝 Лицензия
 
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-=======
-# qr_code_gem
-The best qr_code_gem
->>>>>>> df58dd8c3be33ad709a811a86d626470603a685e
+Проект лицензирован на условиях [MIT License](https://opensource.org/licenses/MIT).
+=====
