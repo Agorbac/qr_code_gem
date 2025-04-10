@@ -47,19 +47,10 @@ bundle add qr_code_gem01
 gem install qr_code_gem01
 ```
 
-```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
-```
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
-```
-
 ## 🚀 Использование
 
 **Генерация QR-кода**
+
 Для генерации QR-кода из текста и сохранения его в PNG-формате:
 
 ```ruby
@@ -74,6 +65,7 @@ puts "QR-код сохранен в: #{filename}"
 Этот код создаст файл qr_code.png, содержащий QR-код с переданным текстом.
 
 **Распознавание QR-кода**
+
 Для декодирования текста из изображения, содержащего QR-код:
 
 ```ruby
