@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 # QrCodeGem⚙️
+=======
+TODO!!!!: Delete this and the text below, and describe your gem
+>>>>>>> refs/remotes/origin/main
 
 **QrCodeGem** — это Ruby-гем для генерации и распознавания QR-кодов. Он использует библиотеки RQRCode, MiniMagick и Qrio для создания изображений QR-кодов и их распознавания из файлов.
 

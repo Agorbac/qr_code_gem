@@ -2,10 +2,11 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in qr_code_gem.gemspec
 gemspec
+gem 'rubocop'
 
-gem "irb"
 gem "rake", "~> 13.0"
-
 gem "minitest", "~> 5.16"
+gem "mini_magick", "~> 5.2" 
+gem "chunky_png", "~> 1.4"   
+gem 'qrio'
