@@ -36,6 +36,10 @@ module QrCodeGem
   end
   def self.decode(image_path)
     begin
+      unless File.exist?(image_path)
+        puts "Error: File not found at #{image_path}"
+        return nil
+      end
 
       image = MiniMagick::Image.open(image_path)
 
@@ -63,4 +67,5 @@ module QrCodeGem
     ensure
       File.delete(temp_file) if temp_file && File.exist?(temp_file)
     end
+  end
 end
