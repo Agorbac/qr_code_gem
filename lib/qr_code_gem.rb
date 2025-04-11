@@ -49,6 +49,7 @@ module QrCodeGem
       qr = Qrio::Qr.load(temp_file)
       
       if qr && qr.qr
+        decoded_text = qr.qr.text
         puts "Decoded text: #{qr.qr.text}"
       else
         puts "QR code not detected"
@@ -67,5 +68,6 @@ module QrCodeGem
     ensure
       File.delete(temp_file) if temp_file && File.exist?(temp_file)
     end
+    return decoded_text
   end
 end
